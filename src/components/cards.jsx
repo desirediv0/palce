@@ -18,7 +18,7 @@ const Cards = () => {
             rounded-2xl"
           />
           <div className="w-[470px] px-5">
-            <div className="flex text-[#E62E2D] pt-5 pb-4">
+            <div className="flex text-[#E62E2D] pt-5 pb-4 hover:bg-red-300">
               <item.address.icon />
               <p className="text-xl pl-1">{item.address.location}</p>
             </div>
