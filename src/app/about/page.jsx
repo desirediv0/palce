@@ -9,6 +9,8 @@ import {
 } from "@/components/ui/breadcrumb";
 import Image from "next/image";
 import Testimonial from "@/components/testimonial";
+import OurTeam from "@/components/ourteam";
+import Company from "@/components/company";
 
 const Page = () => {
   const services = [
@@ -174,7 +176,7 @@ const Page = () => {
 
       {/* section-5 */}
 
-      <Client />
+      <Company />
     </>
   );
 };
