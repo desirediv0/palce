@@ -16,7 +16,7 @@ const Company = () => {
         <div className="grid grid-cols-2 md:grid-cols-5 gap-0">
           {clients.map((client, index) => (
             <div
-              key={index}
+              key={index}iuhihoijjijpkokpokpo
               className="flex flex-col items-center border p-6 "
             >
               <Image
