@@ -1,4 +1,4 @@
-import { ChevronDown, Mail, MapPin, PhoneCall } from "lucide-react";
+import { Mail, MapPin, PhoneCall } from "lucide-react";
 
 export default function Contact() {
   return (
