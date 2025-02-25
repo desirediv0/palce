@@ -17,18 +17,10 @@ export default function Contact() {
                   <h1 className="text-3xl md:text-5xl font-bold text-gray-800">
                     Contact
                   </h1>
-                  <Breadcrumb className="mt-6">
+                  <Breadcrumb className="mt-6 flex items-center justify-center">
                     <BreadcrumbList className="text-gray-600 text-sm md:text-base mt-2">
                       <BreadcrumbItem>
                         <BreadcrumbLink href="/">Home</BreadcrumbLink>
-                      </BreadcrumbItem>
-                      <BreadcrumbSeparator />
-                      <BreadcrumbItem>
-                        <BreadcrumbPage>About Us</BreadcrumbPage>
-                      </BreadcrumbItem>
-                      <BreadcrumbSeparator />
-                      <BreadcrumbItem>
-                        <BreadcrumbPage>Property</BreadcrumbPage>
                       </BreadcrumbItem>
                       <BreadcrumbSeparator />
                       <BreadcrumbItem>
@@ -135,7 +127,7 @@ export default function Contact() {
           </div>
         </div>
 
-        <section className="w-full h-[548px] lg:px-40 ">
+        <section className="w-full h-[548px] lg:px-40 mb-20 ">
           <iframe
             className="w-full h-full"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345086165!2d144.95592831531685!3d-37.81720997975167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf577cc4c0f9b19d1!2sMelbourne%2C%20Australia!5e0!3m2!1sen!2sus!4v1633079622227!5m2!1sen!2sus"

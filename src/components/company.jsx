@@ -12,7 +12,7 @@ const clients = [
 const Company = () => {
   return (
     <>
-      <div className="container mx-auto py-10">
+      <div className="container mx-auto py-10 mt-10">
         <div className="grid grid-cols-2 md:grid-cols-5 gap-0">
           {clients.map((client, index) => (
             <div

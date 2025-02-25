@@ -26,14 +26,10 @@ const Page = () => {
           <h1 className="text-3xl md:text-5xl font-bold text-gray-800">
             Property
           </h1>
-          <Breadcrumb className="mt-6">
+          <Breadcrumb className="mt-6 flex items-center justify-center">
             <BreadcrumbList className="text-gray-600 text-sm md:text-base mt-2">
               <BreadcrumbItem>
                 <BreadcrumbLink href="/">Home</BreadcrumbLink>
-              </BreadcrumbItem>
-              <BreadcrumbSeparator />
-              <BreadcrumbItem>
-                <BreadcrumbPage>About Us</BreadcrumbPage>
               </BreadcrumbItem>
               <BreadcrumbSeparator />
               <BreadcrumbItem>

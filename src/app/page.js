@@ -283,51 +283,6 @@ export default function Home() {
       {/* company image */}
 
       <Company />
-
-      {/* blog */}
-
-      <section className="py-12 bg-white">
-        <div className="container mx-auto px-4">
-          <p className="text-red-600  font-semibold">{"// Blog"}</p>
-          <div className="flex items-center justify-between w-full">
-          <h2 className="text-4xl font-bold mt-6">READ OUR LATEST BLOG</h2>
-          <div className=" mt-6 text-right">
-            <button className="px-7 py-4 bg-red-100 text-red-500 rounded-full  ">
-              More Blog
-            </button>
-          </div>
-
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {blogs.map((blog) => (
-              <div
-                key={blog.id}
-                className="bg-white rounded-lg overflow-hidden shadow-md mt-6"
-              >
-                <Image
-                  src={blog.image}
-                  alt={blog.title}
-                  width={500}
-                  height={300}
-                  className="w-full h-60 object-cover"
-                />
-                <div className="p-4">
-                  <p className="text-sm text-gray-500">
-                    By {blog.author} • {blog.readTime}
-                  </p>
-                  <h3 className="text-xl font-semibold">{blog.title}</h3>
-                  <Link href={"/"}>
-                    <button className="mt-6 text-black hover:text-red-500">
-                      Read More
-                    </button>
-                  </Link>
-                </div>
-              </div>
-            ))}
-          </div>
-         
-        </div>
-      </section>
     </>
   );
 }
