@@ -27,7 +27,7 @@ const Form = () => {
         ></div>
         <div className="relative grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
           {/* Contact Form */}
-          <div className="bg-white p-8 rounded-xl shadow-lg text-gray-900 w-full h-[600px] max-w-md relative top-16">
+          <div className="bg-white p-8 rounded-xl shadow-lg text-gray-900 w-full h-[600px] max-w-md relative sm:top-16">
             <h2 className="text-3xl font-bold mb-4">CONTACT WITH US</h2>
             <p className="text-gray-500 mb-6">
               Lorem ipsum dolor sit amet consectetur adipiscing.

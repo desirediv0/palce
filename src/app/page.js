@@ -307,7 +307,7 @@ export default function Home() {
                   <p className="text-sm text-gray-500">
                     By {blog.author} • {blog.readTime}
                   </p>
-                  <h3 className="text-xl font-semibold mt-2 ">{blog.title}</h3>
+                  <h3 className="text-xl font-semibold">{blog.title}</h3>
                   <Link href={"/"}>
                     <button className="mt-6 text-black hover:text-red-500">
                       Read More
@@ -318,7 +318,7 @@ export default function Home() {
             ))}
           </div>
           <div className="relative right-0 top-[-32rem] mt-6 text-right">
-            <button className="px-7 py-4 bg-red-100 text-red-500 rounded-full ">
+            <button className="px-7 py-4 bg-red-100 text-red-500 rounded-full  ">
               More Blog
             </button>
           </div>
