@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import {
   Breadcrumb,
@@ -9,6 +10,11 @@ import {
 } from "@/components/ui/breadcrumb";
 import Image from "next/image";
 import Testimonial from "@/components/testimonial";
+import OurTeam from "@/components/ourteam";
+import Company from "@/components/company";
+import { FaBuilding, FaUserAlt } from "react-icons/fa";
+import { SiAltiumdesigner } from "react-icons/si";
+import { LucideConstruction } from "lucide-react";
 
 const Page = () => {
   const services = [
@@ -16,19 +22,19 @@ const Page = () => {
       title: "BUILDING CONSTRUCTION",
       description:
         "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna.",
-      icon: "🏢",
+      icon: <FaBuilding />,
     },
     {
       title: "INTERIOR DESIGNING",
       description:
         "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna.",
-      icon: "🏠",
+      icon: <SiAltiumdesigner />,
     },
     {
       title: "GENERAL CONSTRUCTION",
       description:
         "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna.",
-      icon: "🏗️",
+      icon: <LucideConstruction />,
     },
   ];
 
@@ -67,23 +73,24 @@ const Page = () => {
         <div className="w-full lg:w-1/2 flex flex-col gap-4">
           <div className="grid grid-cols-2 gap-4">
             <Image
-              src="/building1.jpg"
+              src="/story-1.jpg"
               width={400}
+              requird
               height={400}
               alt="Building 1"
               className="rounded-lg shadow-lg"
             />
             <Image
-              src="/building2.jpg"
+              src="/story-2.jpg"
               width={400}
               height={400}
               alt="Building 2"
               className="rounded-lg shadow-lg"
             />
           </div>
-          <div className="bg-red-500 text-white p-6 rounded-lg flex items-center gap-4">
+          <div className="bg-red-500 text-white p-6 rounded-lg flex items-center justify-center gap-4">
             <div className="p-4 bg-white text-red-500 rounded-full">
-              <i className="fas fa-users text-2xl"></i>
+            <FaUserAlt />
             </div>
             <div>
               <h3 className="text-xl font-semibold">Client Centric Approach</h3>
@@ -146,7 +153,7 @@ const Page = () => {
                 </div>
               </div>
               <div className="relative h-32">
-                <div className="absolute inset-0 flex flex-col justify-center items-center text-center transition-transform duration-700 group-hover:rotate-[360deg]">
+                <div className="absolute inset-0 flex flex-col justify-center items-center text-center transition-transform duration-700">
                   <h3 className="text-lg font-bold">{service.title}</h3>
                   <p className="text-gray-600 mt-2 text-sm">
                     {service.description}
@@ -174,7 +181,7 @@ const Page = () => {
 
       {/* section-5 */}
 
-      <Client />
+      <Company />
     </>
   );
 };

@@ -36,13 +36,6 @@ const Testimonial = () => {
       rating: 5,
       review: "Pellentesque habitant morbi tristique senectus et netus...",
     },
-    {
-      name: "Sarah Smith",
-      role: "Architect",
-      image: "/author-2.png",
-      rating: 5,
-      review: "Pellentesque habitant morbi tristique senectus et netus...",
-    },
   ];
   return (
     <>
@@ -56,10 +49,12 @@ const Testimonial = () => {
               <CarouselItem key={index} className="p-4">
                 <Card className="shadow-lg rounded-xl overflow-hidden">
                   <CardContent className="p-6 flex flex-col items-center text-center">
-                    <div className="w-full h-40 bg-gradient-to-b from-blue-200 to-white flex justify-center items-center">
+                    <div className="w-full h-40 bg-gradient-to-b from-orange-200 to-white flex justify-center items-center">
                       <Image
                         src={testimonial.image}
                         alt={testimonial.name}
+                        width={100}
+                        height={100}
                         className="w-24 h-24 rounded-full object-cover"
                       />
                     </div>
