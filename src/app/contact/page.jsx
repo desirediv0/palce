@@ -6,89 +6,95 @@ export default function Home() {
   return (
     <>
       <div className="w-100 h-100">
-        <div className="grid md:grid-cols-2 px-40 py-28">
+        <div className="grid grid-cols-1 md:grid-cols-2 px-6 md:px-20 lg:px-40 py-16 md:py-28 gap-8">
           <div>
-            <h1 className="text-[#E62E2D] font-bold pb-6 ">// CONTACT US</h1>
-            <p className="text-5xl text-[#171B2A] font-bold">
+            <h1 className="text-[#E62E2D] font-bold pb-4 md:pb-6">
+              CONTACT US
+            </h1>
+            <p className="text-3xl md:text-5xl text-[#171B2A] font-bold">
               HAVE LEGAL QUERIES? LEAVE THEM TO US.
             </p>
-            <p className="text-xl text-[#5A5D68] py-7">
+            <p className="text-lg md:text-xl text-[#5A5D68] py-4 md:py-7">
               Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa
               Aliquam in hendrerit urna
             </p>
-            <div className="flex pb-4 pt-2 ">
-              <span className=" bg-[#FBEEEE] border border-dotted border-red-600  rounded-full h-14 w-14">
-                <MapPin
-                  className="absolute top-[392px] left-[177px]"
-                  color="red"
-                />
-              </span>
-              <div className="px-6">
-                <p className="text-[#5A5D68] text-xl">Address</p>
-                <p className="text-black text-xl font-bold">
-                  Stone Mountain Park Drive, GA 30083
-                </p>
-              </div>
-            </div>
 
-            <div className="flex py-4">
-              <span className=" bg-[#FBEEEE] border border-dotted border-red-600  rounded-full h-14 w-14">
-                <PhoneCall
-                  className="absolute top-[481px] left-[176px]"
-                  color="red"
-                />
-              </span>
-              <div className="px-6">
-                <p className="text-[#5A5D68] text-xl">Phone</p>
-                <p className="text-black text-xl font-bold">+1 678-772-6710</p>
+            <div className="space-y-6">
+              <div className="flex items-center space-x-4">
+                <span className="flex items-center justify-center bg-[#FBEEEE] border border-dotted border-red-600 rounded-full h-12 w-12">
+                  <MapPin color="red" />
+                </span>
+                <div>
+                  <p className="text-[#5A5D68] text-lg md:text-xl">Address</p>
+                  <p className="text-black text-lg md:text-xl font-bold">
+                    Stone Mountain Park Drive, GA 30083
+                  </p>
+                </div>
               </div>
-            </div>
-            <div className="flex py-4">
-              <span className=" bg-[#FBEEEE] border border-dotted border-red-600  rounded-full h-14 w-14">
-                <Mail
-                  className="absolute top-[568px] left-[177px]"
-                  color="red"
-                />
-              </span>
-              <div className="px-6">
-                <p className="text-[#5A5D68] text-xl">Email</p>
-                <p className="text-black text-xl font-bold">palace@gmail.com</p>
+              <div className="flex items-center space-x-4">
+                <span className="flex items-center justify-center bg-[#FBEEEE] border border-dotted border-red-600 rounded-full h-12 w-12">
+                  <PhoneCall color="red" />
+                </span>
+                <div>
+                  <p className="text-[#5A5D68] text-lg md:text-xl">Phone</p>
+                  <p className="text-black text-lg md:text-xl font-bold">
+                    +1 678-772-6710
+                  </p>
+                </div>
+              </div>
+              <div className="flex items-center space-x-4">
+                <span className="flex items-center justify-center bg-[#FBEEEE] border border-dotted border-red-600 rounded-full h-12 w-12">
+                  <Mail color="red" />
+                </span>
+                <div>
+                  <p className="text-[#5A5D68] text-lg md:text-xl">Email</p>
+                  <p className="text-black text-lg md:text-xl font-bold">
+                    palace@gmail.com
+                  </p>
+                </div>
               </div>
             </div>
           </div>
-          <div className="bg-[#F9F9F9] p-14">
-            <h1 className="font-bold text-4xl text-[#171B2A] pb-3">
+
+          <div className="bg-[#F9F9F9] p-6 md:p-12 rounded-lg">
+            <h2 className="text-2xl md:text-4xl text-[#171B2A] font-bold mb-4 pb-2">
               GET A FREE QUOTE
-            </h1>
-            <div className="flex py-4 gap-4 ">
-              <input
-                placeholder="Name"
-                className="border-2 bg-[#F9F9F9] text-[#5A5D68] p-4 pr-24"
-              ></input>
-              <input
-                placeholder="Email"
-                className="border-2 bg-[#F9F9F9] text-[#5A5D68] p-4 pr-24"
-              ></input>
-            </div>
-            <div className="flex gap-4 py-2">
-              <input
-                placeholder="Phone"
-                className="border-2 bg-[#F9F9F9] text-[#5A5D68] p-4 pr-24"
-              ></input>
-              <input
-                placeholder="Select Service"
-                className="border-2 bg-[#F9F9F9] text-[#5A5D68] p-4 pr-24"
-              ></input>
-            </div>
-            <div className=" py-4 pb-8">
-              <input
+            </h2>
+            <div className="space-y-4">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <input
+                  type="text"
+                  placeholder="Name"
+                  className="border p-3 rounded w-full bg-[#F9F9F9]"
+                />
+                <input
+                  type="email"
+                  placeholder="Email"
+                  className="border p-3 rounded w-full bg-[#F9F9F9]"
+                />
+              </div>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <input
+                  type="text"
+                  placeholder="Phone"
+                  className="border p-3 rounded w-full bg-[#F9F9F9]"
+                />
+                <select className="border p-3 rounded w-full bg-[#F9F9F9]">
+                  <option>Select Service</option>
+                  <option>Service 1</option>
+                  <option>Service 2</option>
+                </select>
+              </div>
+              <textarea
                 placeholder="Write a Message"
-                className="border-2 bg-[#F9F9F9] text-[#5A5D68] p-4 w-full pb-32"
-              ></input>
+                className="border p-3 rounded w-full h-32 bg-[#F9F9F9]"
+              />
+              <div className="pt-3">
+                <button className="bg-red-600 text-white py-3 px-6 rounded-full text-lg font-semibold hover:bg-red-700 w-full md:w-auto">
+                  Send Now
+                </button>
+              </div>
             </div>
-            <button className="text-white text-md font-bold bg-[#E62E2D] rounded-[200px] p-4 px-9">
-              Send Now
-            </button>
           </div>
         </div>
 
@@ -99,9 +105,6 @@ export default function Home() {
             allowFullScreen
           ></iframe>
         </section>
-        <div className="px-40 py-14 grid grid-cols-3 gap-3">
-          <Cards />
-        </div>
       </div>
     </>
   );

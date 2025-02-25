@@ -8,17 +8,17 @@ const Cards = () => {
   return (
     <>
       {data.map((item, idx) => (
-        <div key={idx} className="flex flex-col rounded-lg p-2 ">
+        <div key={idx} className="flex flex-col rounded-lg p-2 pt-4">
           <Image
             src={item.image}
             width={440}
             height={200}
             alt={item.description}
             className="
-            rounded-2xl"
+            rounded-2xl hover:-translate-y-2 transform transition duration-500 ease-in-out"
           />
           <div className="w-[470px] px-5">
-            <div className="flex text-[#E62E2D] pt-5 pb-4 hover:bg-red-300">
+            <div className="flex text-[#E62E2D] pt-5 pb-4 ">
               <item.address.icon />
               <p className="text-xl pl-1">{item.address.location}</p>
             </div>
