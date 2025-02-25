@@ -142,7 +142,7 @@ export default function Home() {
                 height={600}
                 className="w-full h-full object-cover rounded-lg shadow-lg"
               />
-              <div className="absolute top-[20rem] left-[23rem] bg-white py-10 px-10 rounded-lg shadow-xl">
+              <div className="absolute top-[20rem] lg:left-[23rem] bg-white py-10 px-10 rounded-lg shadow-xl">
                 <h2 className="text-[70px] font-bold text-red-600 ">30+</h2>
                 <p className="text-gray-500 mt-1">Years of Experience</p>
               </div>
@@ -150,7 +150,7 @@ export default function Home() {
             {/* Right Side - Text Content */}
             <div className="mt-6">
               <p className="text-red-600 font-semibold">
-                // DISCOVER OUR STORY
+                {"// DISCOVER OUR STORY"} 
               </p>
               <h2 className="text-4xl font-bold text-gray-900">
                 UNVEILING PALACE REAL ESTATE JOURNEY
@@ -210,7 +210,7 @@ export default function Home() {
       <div className="container mx-auto px-6 lg:px-20 py-12 flex flex-col lg:flex-row items-center">
       {/* Left Side */}
       <div className="lg:w-1/2 space-y-6">
-        <p className="text-red-600 font-semibold">// DOWNLOAD MOBILE APP</p>
+        <p className="text-red-600 font-semibold">{"// DOWNLOAD MOBILE APP"}</p>
         <h2 className="text-4xl font-bold text-gray-900 leading-tight">
           DOWNLOAD MOBILE APP <br /> FOR REAL ESTATE
         </h2>
@@ -288,7 +288,7 @@ export default function Home() {
 
     <section className="py-12 bg-white">
       <div className="container mx-auto px-4">
-      <p className="text-red-600  font-semibold">// Blog</p>
+      <p className="text-red-600  font-semibold">{"// Blog"}</p>
         <h2 className="text-4xl font-bold mt-6">READ OUR LATEST BLOG</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {blogs.map((blog) => (

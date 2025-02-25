@@ -40,8 +40,10 @@ const Testimonial = () => {
   return (
     <>
       <div className="max-w-6xl mx-auto p-8">
-        <h2 className="text-3xl font-bold text-center mb-6">
-          OUR HAPPY CLIENTS TESTIMONIALS
+        <p className="text-red-600 font-semibold flex items-center justify-center">{"// Client Feedback"}</p>
+        <h2 className="text-5xl font-bold text-center mb-6 mt-4">
+          OUR HAPPY CLIENTS 
+          <br />TESTIMONIALS
         </h2>
         <Carousel className="relative">
           <CarouselContent className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
