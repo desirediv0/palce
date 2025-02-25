@@ -21,24 +21,24 @@ export default function Home() {
   const blogs = [
     {
       id: 1,
-      title: 'HOME BUYING 101 ESSENTIAL BEST TIPS.',
-      image: '/news-1.jpg',
-      readTime: '6 min read',
-      author: 'Admin',
+      title: "HOME BUYING 101 ESSENTIAL BEST TIPS.",
+      image: "/news-1.jpg",
+      readTime: "6 min read",
+      author: "Admin",
     },
     {
       id: 2,
-      title: 'FINDING DREAM HOME: STEP BY STEP WITH US',
-      image: '/news-2.jpg',
-      readTime: '6 min read',
-      author: 'Admin',
+      title: "FINDING DREAM HOME: STEP BY STEP WITH US",
+      image: "/news-2.jpg",
+      readTime: "6 min read",
+      author: "Admin",
     },
     {
       id: 3,
-      title: 'SELLING YOUR HOME: QUICK PRO TIPS NOW',
-      image: '/news-3.jpg',
-      readTime: '6 min read',
-      author: 'Admin',
+      title: "SELLING YOUR HOME: QUICK PRO TIPS NOW",
+      image: "/news-3.jpg",
+      readTime: "6 min read",
+      author: "Admin",
     },
   ];
 
@@ -142,7 +142,7 @@ export default function Home() {
                 height={600}
                 className="w-full h-full object-cover rounded-lg shadow-lg"
               />
-              <div className="absolute top-[20rem] left-[23rem] bg-white py-10 px-10 rounded-lg shadow-xl">
+              <div className="absolute top-[20rem] lg:left-[23rem] bg-white py-10 px-10 rounded-lg shadow-xl">
                 <h2 className="text-[70px] font-bold text-red-600 ">30+</h2>
                 <p className="text-gray-500 mt-1">Years of Experience</p>
               </div>
@@ -150,7 +150,7 @@ export default function Home() {
             {/* Right Side - Text Content */}
             <div className="mt-6">
               <p className="text-red-600 font-semibold">
-                // DISCOVER OUR STORY
+                {"// DISCOVER OUR STORY"}
               </p>
               <h2 className="text-4xl font-bold text-gray-900">
                 UNVEILING PALACE REAL ESTATE JOURNEY
@@ -208,117 +208,126 @@ export default function Home() {
       {/* section-4 */}
 
       <div className="container mx-auto px-6 lg:px-20 py-12 flex flex-col lg:flex-row items-center">
-      {/* Left Side */}
-      <div className="lg:w-1/2 space-y-6">
-        <p className="text-red-600 font-semibold">// DOWNLOAD MOBILE APP</p>
-        <h2 className="text-4xl font-bold text-gray-900 leading-tight">
-          DOWNLOAD MOBILE APP <br /> FOR REAL ESTATE
-        </h2>
-        <p className="text-gray-600">
-          Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi.
-          Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla,
-          mattis ligula consectetur, ultrices mauris.
-        </p>
-        <p className="text-gray-600">
-          Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi.
-          Aliquam in hendrerit urna.
-        </p>
-        <div className="flex gap-4">
-          <Image
-            src="/gogle.png"
-            alt="Google Play"
-            width={150}
-            height={50}
-            className="cursor-pointer"
-          />
-          <Image
-            src="/app-store.png"
-            alt="App Store"
-            width={150}
-            height={50}
-            className="cursor-pointer"
-          />
-        </div>
-      </div>
-
-      {/* Right Side */}
-      <div className="lg:w-1/2 flex justify-center relative mt-10 lg:mt-0">
-        {/* Background Circle */}
-        <div className="absolute w-64 h-64 rounded-full -z-10 right-10 top-10 hidden lg:block"></div>
-        
-        {/* Mobile Image */}
-        <Image
-          src="/app.png"
-          alt="Mobile App"
-          width={600}
-          height={600}
-          className="ml-10"
-        />
-
-        {/* Rating Box */}
-        <div className="absolute -left-12 bottom-10 bg-white py-10 px-10 rounded-xl shadow-md">
-          <h3 className="text-6xl font-bold text-red-500 ">
-            4.9 <span className="text-sm text-gray-500">/5.0</span>
-          </h3>
-          <div className="flex gap-1 text-yellow-500 text-lg">
-            ★★★★★
+        {/* Left Side */}
+        <div className="lg:w-1/2 space-y-6">
+          <p className="text-red-600 font-semibold">
+            {"// DOWNLOAD MOBILE APP"}
+          </p>
+          <h2 className="text-4xl font-bold text-gray-900 leading-tight">
+            DOWNLOAD MOBILE APP <br /> FOR REAL ESTATE
+          </h2>
+          <p className="text-gray-600">
+            Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa
+            mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien
+            fringilla, mattis ligula consectetur, ultrices mauris.
+          </p>
+          <p className="text-gray-600">
+            Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa
+            mi. Aliquam in hendrerit urna.
+          </p>
+          <div className="flex gap-4">
+            <Image
+              src="/gogle.png"
+              alt="Google Play"
+              width={150}
+              height={50}
+              className="cursor-pointer"
+            />
+            <Image
+              src="/app-store.png"
+              alt="App Store"
+              width={150}
+              height={50}
+              className="cursor-pointer"
+            />
           </div>
-          <p className="text-black font-medium text-md">100K Review</p>
+        </div>
+
+        {/* Right Side */}
+        <div className="lg:w-1/2 flex justify-center relative mt-10 lg:mt-0">
+          {/* Background Circle */}
+          <div className="absolute w-64 h-64 rounded-full -z-10 right-10 top-10 hidden lg:block"></div>
+
+          {/* Mobile Image */}
+          <Image
+            src="/app.png"
+            alt="Mobile App"
+            width={600}
+            height={600}
+            className="ml-10"
+          />
+
+          {/* Rating Box */}
+          <div className="absolute -left-12 bottom-10 bg-white py-10 px-10 rounded-xl shadow-md">
+            <h3 className="text-6xl font-bold text-red-500 ">
+              4.9 <span className="text-sm text-gray-500">/5.0</span>
+            </h3>
+            <div className="flex gap-1 text-yellow-500 text-lg">★★★★★</div>
+            <p className="text-black font-medium text-md">100K Review</p>
+          </div>
         </div>
       </div>
-    </div>
 
-    {/* property */}
+      {/* property */}
 
-    <Property/>
+      <Property />
 
-    {/* OurTeam */}
+      {/* OurTeam */}
 
-    <OurTeam/>
+      <OurTeam />
 
-    {/* Contact */}
+      {/* Contact */}
 
-    <Form/>
+      <Form />
 
-    {/* company image */}
+      {/* company image */}
 
-    <Company/>
+      <Company />
 
-    {/* blog */}
+      {/* blog */}
 
-    <section className="py-12 bg-white">
-      <div className="container mx-auto px-4">
-      <p className="text-red-600  font-semibold">// Blog</p>
-        <h2 className="text-4xl font-bold mt-6">READ OUR LATEST BLOG</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {blogs.map((blog) => (
-            <div key={blog.id} className="bg-white rounded-lg overflow-hidden shadow-md mt-6">
-              <Image
-                src={blog.image}
-                alt={blog.title}
-                width={500}
-                height={300}
-                className="w-full h-60 object-cover"
-              />
-              <div className="p-4">
-                <p className="text-sm text-gray-500">
-                  By {blog.author} • {blog.readTime}
-                </p>
-                <h3 className="text-xl font-semibold mt-2 ">{blog.title}</h3>
-                <Link href={"/"}>
-                <button className="mt-6 text-black hover:text-red-500">Read More</button>
-                </Link>
+      <section className="py-12 bg-white">
+        <div className="container mx-auto px-4">
+          <p className="text-red-600  font-semibold">{"// Blog"}</p>
+          <div className="flex items-center justify-between w-full">
+          <h2 className="text-4xl font-bold mt-6">READ OUR LATEST BLOG</h2>
+          <div className=" mt-6 text-right">
+            <button className="px-7 py-4 bg-red-100 text-red-500 rounded-full  ">
+              More Blog
+            </button>
+          </div>
+
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {blogs.map((blog) => (
+              <div
+                key={blog.id}
+                className="bg-white rounded-lg overflow-hidden shadow-md mt-6"
+              >
+                <Image
+                  src={blog.image}
+                  alt={blog.title}
+                  width={500}
+                  height={300}
+                  className="w-full h-60 object-cover"
+                />
+                <div className="p-4">
+                  <p className="text-sm text-gray-500">
+                    By {blog.author} • {blog.readTime}
+                  </p>
+                  <h3 className="text-xl font-semibold">{blog.title}</h3>
+                  <Link href={"/"}>
+                    <button className="mt-6 text-black hover:text-red-500">
+                      Read More
+                    </button>
+                  </Link>
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
+         
         </div>
-        <div className="relative right-0 top-[-32rem] mt-6 text-right">
-          <button className="px-7 py-4 bg-red-100 text-red-500 rounded-full ">
-            More Blog
-          </button>
-        </div>
-      </div>
-    </section>
+      </section>
     </>
   );
 }
