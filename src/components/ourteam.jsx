@@ -42,7 +42,7 @@ const OurTeam = () => {
     <>
       <div className="container mx-auto px-6 lg:px-20 py-16 relative">
   {/* Title Section */}
-  <p className="text-red-600 font-semibold uppercase">// Our Team</p>
+  <p className="text-red-600 font-semibold uppercase">{"// Our Team"}</p>
   <h2 className="text-4xl font-bold text-gray-900 mt-4">
     MEET OUR REAL ESTATES <br /> PROFESSIONAL
   </h2>

@@ -44,7 +44,7 @@ const Property = () => {
     <>
       <div className="container bg-gray-100 mx-auto px-6 lg:px-20 py-12 text-center">
         {/* Title Section */}
-        <p className="text-red-600 font-semibold">// EXPLORE PROPERTIES</p>
+        <p className="text-red-600 font-semibold">{"// EXPLORE PROPERTIES"}</p>
         <h2 className="text-6xl font-bold text-gray-900 mb-10 uppercase mt-4">
           Explore Featured
           <br />

@@ -22,7 +22,7 @@ const CarouselData = () => {
   return (
     <>
       <div className="container bg-gray-100 mx-auto px-6 lg:px-20 py-16 relative">
-        <p className="text-red-600 font-semibold">// EXPLORE CITIES</p>
+        <p className="text-red-600 font-semibold">{"// EXPLORE CITIES"}</p>
         <h2 className="text-4xl font-bold text-gray-900 mt-4">
           TAKE A STROLL AROUND <br /> SURROUNDINGS.
         </h2>
@@ -56,7 +56,7 @@ const CarouselData = () => {
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <div className="absolute right-[10rem] top-[-3rem] transform -translate-y-1/2 flex gap-4">
+            <div className="absolute right-10 top-[-4rem] transform -translate-y-1/2 flex gap-4">
               <CarouselPrevious className="bg-white hover:bg-white p-2 " />
               <CarouselNext className="bg-white hover:bg-white p-2 " />
             </div>

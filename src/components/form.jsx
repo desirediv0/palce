@@ -81,7 +81,7 @@ const Form = () => {
 
           {/* Contact Details */}
           <div>
-            <p className="text-red-500 text-sm font-bold">// CONTACT WITH US</p>
+            <p className="text-red-500 text-sm font-bold">{"// CONTACT WITH US"}</p>
             <h2 className="text-5xl font-bold leading-tight mt-2">
               REACH OUT TO US
               <br />
