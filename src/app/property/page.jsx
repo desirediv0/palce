@@ -37,8 +37,8 @@ const Page = () => {
             </div>
           </div>
     
-      <div className="grid grid-cols-3 place-items-center pl-6">
-        <Cards />
+      <div className="grid grid-cols-3 place-items-center w-full border pl-6">
+        <Cards/>
       </div>
     </>
   );

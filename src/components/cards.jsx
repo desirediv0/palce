@@ -7,49 +7,51 @@ import data from "./card-data";
 const Cards = () => {
   return (
     <>
+      <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-3 gap-12 p-4">
       {data.map((item, idx) => (
         <div
           key={idx}
-          className="flex flex-col rounded-lg p-2 w-full max-w-[500px] mx-auto sm:max-w-none px-12"
+          className="flex flex-col rounded-lg p-4 shadow-lg bg-white mx-auto"
         >
           <Image
             src={item.image}
             width={440}
             height={200}
             alt={item.description}
-            className="rounded-2xl hover:transform hover:scale-105 transition duration-300 w-full h-auto"
+            className="rounded-2xl hover:scale-105 transition-transform duration-300 w-full h-auto"
           />
-          <div className="w-full px-5 sm:w-[470px]">
-            <div className="flex text-[#E62E2D] pt-5 pb-4">
-              <item.address.icon />
-              <p className="text-xl pl-1">{item.address.location}</p>
+          <div className="w-full px-5 mt-4">
+            <div className="flex items-center text-red-600 space-x-2">
+              <item.address.icon className="w-5 h-5" />
+              <p className="text-lg">{item.address.location}</p>
             </div>
-            <p className="text-3xl text-[#171B2A] font-bold pb-5">
+            <p className="text-2xl font-bold text-gray-900 mt-3">
               {item.description}
             </p>
-            <div className="flex border-t-2 border-b-2 w-full py-4 gap-6 sm:w-[400px]">
-              <div className="flex text-[#5C5F69] border-r pr-5">
-                <item.category.bed.icon />
-                <p className="pl-2">{item.category.bed.beds}</p>
+            <div className="flex items-center border-t border-b py-4 mt-3 justify-between">
+              <div className="flex items-center text-gray-600 space-x-2">
+                <item.category.bed.icon className="w-5 h-5" />
+                <p>{item.category.bed.beds}</p>
               </div>
-              <div className="flex text-[#5C5F69] border-r pr-5">
-                <item.category.bathroom.icons />
-                <p className="pl-2">{item.category.bathroom.bathrooms}</p>
+              <div className="flex items-center text-gray-600 space-x-2">
+                <item.category.bathroom.icons className="w-5 h-5" />
+                <p>{item.category.bathroom.bathrooms}</p>
               </div>
-              <div className="flex text-[#5C5F69]">
-                <item.category.area.icons />
-                <p className="pl-2">{item.category.area.areas}</p>
+              <div className="flex items-center text-gray-600 space-x-2">
+                <item.category.area.icons className="w-5 h-5" />
+                <p>{item.category.area.areas}</p>
               </div>
             </div>
-            <div className="flex py-8 justify-between">
-              <p className="text-2xl text-[#171B2A] font-bold">
+            <div className="flex justify-between items-center py-6">
+              <p className="text-xl font-bold text-gray-900">
                 {item.price.prices}
               </p>
-              <item.price.logo color="red" className="mr-12" />
+              <item.price.logo className="w-6 h-6 text-red-500" />
             </div>
           </div>
         </div>
       ))}
+    </div>
     </>
   );
 };
