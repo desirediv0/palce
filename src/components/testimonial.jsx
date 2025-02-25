@@ -19,6 +19,7 @@ const Testimonial = () => {
       name: "Leslie Alexander",
       role: "Online Broker",
       image: "/author-1.png",
+
       rating: 5,
       review: "Lorem ipsum dolor sit amet consectetur adipiscing elit...",
     },
