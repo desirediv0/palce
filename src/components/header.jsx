@@ -107,7 +107,7 @@ const Header = () => {
               </div>
               {/* get a quote */}
               <Link href={"/"}>
-              <button className="rounded-full bg-red-600 text-white px-6 py-2 hover:bg-orange-600 transition">
+              <button className="hidden sm:block rounded-full bg-red-600 text-white px-6 py-2 hover:bg-orange-600 transition">
                 Get a Quote
               </button>
               </Link>

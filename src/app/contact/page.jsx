@@ -1,8 +1,47 @@
+import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 import { Mail, MapPin, PhoneCall } from "lucide-react";
 
 export default function Contact() {
   return (
     <>
+       {/* banner */}
+              <div className=" relative bg-blue-100 py-16 md:py-20 flex flex-col items-center text-center w-full">
+                {/* Background Overlay */}
+                <div
+                  className="absolute inset-0 bg-cover bg-center opacity-30"
+                  style={{ backgroundImage: "url('/pattern.png')" }}
+                ></div>
+        
+                {/* Content */}
+                <div className="relative z-10 px-4 md:px-8">
+                  <h1 className="text-3xl md:text-5xl font-bold text-gray-800">
+                    Contact
+                  </h1>
+                  <Breadcrumb className="mt-6">
+                    <BreadcrumbList className="text-gray-600 text-sm md:text-base mt-2">
+                      <BreadcrumbItem>
+                        <BreadcrumbLink href="/">Home</BreadcrumbLink>
+                      </BreadcrumbItem>
+                      <BreadcrumbSeparator />
+                      <BreadcrumbItem>
+                        <BreadcrumbPage>About Us</BreadcrumbPage>
+                      </BreadcrumbItem>
+                      <BreadcrumbSeparator />
+                      <BreadcrumbItem>
+                        <BreadcrumbPage>Property</BreadcrumbPage>
+                      </BreadcrumbItem>
+                      <BreadcrumbSeparator />
+                      <BreadcrumbItem>
+                        <BreadcrumbPage>Contact</BreadcrumbPage>
+                      </BreadcrumbItem>
+                    </BreadcrumbList>
+                  </Breadcrumb>
+                </div>
+              </div>
+    
+
+
+    {/* section-1 */}
       <div className="w-100 h-100">
         <div className="grid grid-cols-1 md:grid-cols-2 px-6 md:px-20 lg:px-40 py-16 md:py-28 gap-8">
           <div>
@@ -96,7 +135,7 @@ export default function Contact() {
           </div>
         </div>
 
-        <section className="w-full h-[548px] px-40 ">
+        <section className="w-full h-[548px] lg:px-40 ">
           <iframe
             className="w-full h-full"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345086165!2d144.95592831531685!3d-37.81720997975167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf577cc4c0f9b19d1!2sMelbourne%2C%20Australia!5e0!3m2!1sen!2sus!4v1633079622227!5m2!1sen!2sus"

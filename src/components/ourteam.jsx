@@ -66,8 +66,8 @@ const OurTeam = () => {
               className="rounded-full border-4 border-gray-200"
             />
           </div>
-          <h3 className="text-lg font-semibold mt-4">{member.name}</h3>
-          <p className="text-gray-500 text-sm">{member.role}</p>
+          <h3 className="text-lg font-semibold mt-4 flex justify-center">{member.name}</h3>
+          <p className="text-gray-500 text-sm flex justify-center">{member.role}</p>
           <div className="flex justify-center mt-3">
             <MessageCircle className="text-gray-400 hover:text-red-500 w-6 h-6 cursor-pointer" />
           </div>

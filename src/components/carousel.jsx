@@ -35,7 +35,7 @@ const CarouselData = () => {
                   key={index}
                   className="pl-2 md:pl-4 group relative overflow-hidden rounded-xl md:basis-1/4 "
                 >
-                  <div className="relative w-[100%] h-80 mt-8 ">
+                  <div className="relative w-[100%] h-80 mt-8 overflow-hidden">
                     <Image
                       src={city.image}
                       alt={city.name}
