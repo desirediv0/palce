@@ -16,7 +16,7 @@ import {
 const navigationLinks = [
   { href: "/", label: "Home" },
   { href: "/about", label: "About" },
-  { href: "/proeprty", label: "Property" },
+  { href: "/property", label: "Property" },
   { href: "/contact", label: "Contact" },
 ];
 
