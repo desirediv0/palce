@@ -16,7 +16,7 @@ const properties = [
     baths: 2,
     area: "6×8 m²",
     price: "$2,400",
-    link: "/property_details",
+    link: "/property/1",
   },
   {
     id: 2,
@@ -28,7 +28,7 @@ const properties = [
     baths: 2,
     area: "6×8 m²",
     price: "$2,400",
-    link: "/property_details",
+    link: "/property/1",
   },
   {
     id: 3,
@@ -40,7 +40,7 @@ const properties = [
     baths: 2,
     area: "6×8 m²",
     price: "$2,400",
-    link: "/property_details",
+    link: "/property/1",
   },
   {
     id: 4,
@@ -52,7 +52,7 @@ const properties = [
     baths: 2,
     area: "6×8 m²",
     price: "$2,400",
-    link: "/property_details",
+    link: "/property/1",
   },
   {
     id: 5,
@@ -64,7 +64,7 @@ const properties = [
     baths: 2,
     area: "6×8 m²",
     price: "$2,400",
-    link: "/property_details",
+    link: "/property/1",
   },
   {
     id: 6,
@@ -76,7 +76,7 @@ const properties = [
     baths: 2,
     area: "6×8 m²",
     price: "$2,400",
-    link: "/property_details",
+    link: "/property/1",
   },
 ];
   

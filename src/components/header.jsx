@@ -14,7 +14,7 @@ import {
 } from "@/components/ui/sheet";
 
 const navigationLinks = [
-  { href: "/", label: "Home" },
+  { href: "/", label: "Home"},
   { href: "/about", label: "About" },
   { href: "/property", label: "Property" },
   { href: "/contact", label: "Contact" },
@@ -22,6 +22,7 @@ const navigationLinks = [
 
 const Header = () => {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
+  const [isSearchClose, setIsSearchClose] = useState(true);
 
   return (
     <div className="sticky top-0 z-50">
